@@ -3,15 +3,15 @@
 
 /* Variáveis de cores */
 :root {
-    --cor-primaria: #37451d;
-    --cor-primaria-clara: #4a5c27;
+    --cor-primaria: #4A5D23;
+    --cor-primaria-clara: #4A5D23;
     --cor-secundaria: #1a1a1a;
-    --cor-fundo: #ffffff;
+    --cor-fundo: #F5F5F7;
     --cor-fundo-secundario: #f8f9fa;
     --cor-texto: #333333;
     --cor-texto-claro: #666666;
-    --cor-branco: #ffffff;
-    --cor-borda: #eaeaea;
+    --cor-branco: #F5F5F7;
+    --cor-borda: #F5F5F7;
     --sombra: 0 4px 20px rgba(0, 0, 0, 0.08);
     --sombra-destaque: 0 10px 30px rgba(55, 69, 29, 0.15);
 }
@@ -83,9 +83,7 @@ header {
 .hero-image {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: var(--sombra-destaque);
+    overflow: clip;
 }
 
 .hero-image img {
