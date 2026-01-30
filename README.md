@@ -4,7 +4,7 @@ Este repositório contém o código-fonte do meu site pessoal, onde apresento mi
 
 🔗 **Acesse o site online:** [CLIQUE AQUI PARA VER](https://hsgustavoo.github.io/meu-portfolio-tech/)
 
-##🚀 Sobre o Projeto
+## 🚀 Sobre o Projeto
 O objetivo deste projeto é servir como uma vitrine centralizada para minhas habilidades técnicas, substituindo o currículo tradicional em papel por uma experiência digital e interativa.
 
 ## 🛠️ Tecnologias Utilizadas
