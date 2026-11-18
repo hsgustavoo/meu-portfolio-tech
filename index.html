@@ -3,435 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Henrique Silva | Desenvolvedor Backend & Automação</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script defer src="script.js"></script>
+    <title>Gustavo Henrique Silva (hsgustavoo) | Backend, automação e mentoria de inovação</title>
+    <meta name="description" content="Desenvolvedor backend e de automação (Python, SQL e APIs) e mentor de inovação no Senac X. Transformo problemas manuais em soluções que funcionam.">
+    <meta name="theme-color" content="#0B1B3A">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="hsgustavoo | Backend, automação e mentoria de inovação">
+    <meta property="og:description" content="Transformo problemas manuais em soluções que funcionam.">
+    <meta property="og:image" content="imagens/unnamed.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2337451d'>GS</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div id="progress-bar"></div>
+    <!-- Ícones e símbolo da marca (reutilizados com <use>) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="hs-simbolo" viewBox="0 0 40 40">
+            <rect width="40" height="40" rx="10" fill="#2F5BFF"/>
+            <text x="20" y="27" text-anchor="middle" font-family="Sora, Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#FFFFFF">hs</text>
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect width="4" height="12" x="2" y="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 18c-4.51 2-5-2-7-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
 
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <h1>Gustavo Silva</h1>
-                <span>Desenvolvedor Backend & Automação</span>
-            </div>
-            <nav>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div id="progress-bar" aria-hidden="true"></div>
+
+    <header class="site-header" id="topo">
+        <div class="container header-inner">
+            <a class="logo" href="#topo" aria-label="hsgustavoo, início">
+                <svg class="logo-simbolo" width="40" height="40" aria-hidden="true"><use href="#hs-simbolo"/></svg>
+                <span class="logo-texto">hsgustavoo</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav" id="menu-principal" aria-label="Principal">
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#contato" class="cta-nav">Contato</a></li>
+                    <li><a class="btn btn-secundario btn-sm" href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1>Transformando problemas manuais <span class="highlight">em soluções de código.</span></h1>
-                    <p>Desenvolvedor Backend & Automação | Python, SQL e APIs. Ajudando empresas e o setor público a eliminarem o retrabalho.</p>
-                    <div class="hero-buttons">
-                        <a href="#projetos" class="btn-primary">Ver Projetos</a>
-                        <a href="#contato" class="btn-secondary">Entrar em Contato</a>
+    <main id="conteudo">
+        <!-- HERO -->
+        <section class="hero on-dark" id="hero" aria-labelledby="hero-titulo">
+            <div class="container hero-grid">
+                <div class="hero-texto">
+                    <p class="hero-tag" data-enter style="--i:0">Mentor de inovação no Senac X</p>
+                    <h1 id="hero-titulo" data-enter style="--i:1">Transformo problemas manuais em soluções que funcionam.</h1>
+                    <p class="hero-lead" data-enter style="--i:2">
+                        Desenvolvedor backend e de automação (Python, SQL e APIs). Simplifico o problema,
+                        destravo o time e entrego o caminho, seja numa empresa, no setor público ou numa
+                        semana de imersão com jovens.
+                    </p>
+                    <div class="hero-acoes" data-enter style="--i:3">
+                        <a class="btn btn-primario" href="#projetos">Ver projetos</a>
+                        <a class="btn btn-secundario" href="#contato">Falar comigo</a>
                     </div>
                 </div>
-                <div class="hero-visual">
-    <div class="hero-image">
-        <img src="imagens/Programming-pana.svg" alt="Gustavo Henrique Silva - Desenvolvedor Backend & Automação">
-    </div>
-</div>
+                <figure class="hero-foto" data-enter style="--i:2">
+                    <img src="imagens/unnamed.jpg" alt="Gustavo Henrique Silva sorrindo, de camiseta preta" width="560" height="560">
+                    <figcaption class="hero-selo">
+                        <strong>Senac X</strong>
+                        <span>Mentoria técnica e de inovação</span>
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
-        <section id="sobre">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>Sobre Mim</h2>
-                    <p>Conheça minha trajetória e propósito</p>
-                </div>
-                <div class="sobre-container">
-                    <div class="sobre-img">
-                        <img src="imagens/Foto Dev.jpg" alt="Foto de Gustavo Henrique Silva">
-                    </div>
+        <!-- SOBRE -->
+        <section class="secao secao-nevoa" id="sobre" aria-labelledby="sobre-titulo">
+            <div class="container">
+                <header class="secao-cabecalho">
+                    <h2 id="sobre-titulo">Sobre mim</h2>
+                    <p>De planilha manual a código que roda sozinho.</p>
+                </header>
+
+                <div class="sobre-grid">
+                    <figure class="sobre-foto">
+                        <img src="imagens/Foto Dev.jpg" alt="Gustavo Henrique Silva trabalhando no notebook" loading="lazy" width="474" height="512">
+                    </figure>
+
                     <div class="sobre-texto">
-                        <h3>Gustavo Silva - Desenvolvedor Backend</h3>
-                        <p>Minha especialidade é eliminar o trabalho repetitivo.</p>
-                        <p>Diferente de desenvolvedores tradicionais, eu venho de um background administrativo. Vivi na pele a dor de planilhas manuais 
-                        e processos lentos. Por isso, hoje uso Python e Engenharia de Software para criar ferramentas que devolvem o ativo mais valioso 
-                        para as empresas: Tempo.</p>
-                        <p>Meu foco técnico é construir Backends robustos, APIs eficientes e Automações de Dados que funcionam silenciosamente nos bastidores.</p>
-                        <div class="sobre-destaque">
-                            <div class="destaque-item">
-                                <span class="numero">+30%</span>
-                                <span class="texto">Processos Otimizados</span>
+                        <h3>Minha especialidade é eliminar o trabalho repetitivo.</h3>
+                        <p>
+                            Eu venho de um background administrativo. Vivi na pele a dor de planilhas manuais e
+                            processos lentos. Por isso, hoje uso Python e engenharia de software para criar
+                            ferramentas que devolvem às pessoas o ativo mais valioso: tempo.
+                        </p>
+                        <p>
+                            Meu foco técnico é construir backends robustos, APIs eficientes e automações de dados
+                            que funcionam em silêncio, nos bastidores.
+                        </p>
+                        <p>
+                            Como mentor no Senac X, ajudo jovens a transformar desafios reais em soluções,
+                            com clareza e ação.
+                        </p>
+
+                        <dl class="numeros">
+                            <div>
+                                <dt>Processos otimizados</dt>
+                                <dd>+30%</dd>
                             </div>
-                            <div class="destaque-item">
-                                <span class="numero">+10</span>
-                                <span class="texto">Automações</span>
+                            <div>
+                                <dt>Automações entregues</dt>
+                                <dd>+10</dd>
                             </div>
-                        </div>
+                        </dl>
                     </div>
                 </div>
+
+                <ul class="valores" aria-label="Valores">
+                    <li class="card">
+                        <h3>Clareza</h3>
+                        <p>Simplificar antes de complicar.</p>
+                    </li>
+                    <li class="card">
+                        <h3>Ação</h3>
+                        <p>Testar, errar rápido, ajustar.</p>
+                    </li>
+                    <li class="card">
+                        <h3>Generosidade</h3>
+                        <p>Compartilhar o que sei.</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section id="projetos">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>Projetos em Destaque</h2>
-                    <p>Soluções que entregam valor real</p>
-                </div>
-                
-                
-                    <div class="projeto-featured projeto-reverse">
-                        <div class="projeto-conteudo">
-                            <div class="projeto-header">
-                                <h3>Assistente de Triagem Voice-First (IA Generativa)</h3>
-                                <div class="projeto-categoria">Acessibilidade tecnológica</div>
-                            </div>
-                            <p class="projeto-descricao">
-                                Desenvolver um sistema de atendimento acessível para idosos que elimine a necessidade de digitação. O sistema opera 100% por voz via WhatsApp.
+        <!-- PROJETOS -->
+        <section class="secao secao-noite on-dark" id="projetos" aria-labelledby="projetos-titulo">
+            <div class="container">
+                <header class="secao-cabecalho">
+                    <h2 id="projetos-titulo">Projetos em destaque</h2>
+                    <p>Soluções que entregam valor real.</p>
+                </header>
+
+                <div class="projetos-grid">
+                    <article class="card card-projeto">
+                        <div class="projeto-midia projeto-midia-ilustra">
+                            <img src="imagens/Voice interface-bro.svg" alt="Ilustração de uma interface de voz" loading="lazy">
+                        </div>
+                        <div class="projeto-corpo">
+                            <span class="status status-andamento">Em andamento</span>
+                            <h3>Assistente de triagem voice-first com IA generativa</h3>
+                            <p class="projeto-categoria">Acessibilidade tecnológica</p>
+                            <p>
+                                Um sistema de atendimento acessível para idosos, sem digitação. Funciona 100% por voz via WhatsApp.
                             </p>
                             <p>
-                                Arquitetura baseada em LLM (RAG) para consulta de base de conhecimento e Agentes Autônomos para realizar agendamentos reais na agenda do Google Calendar.
+                                A arquitetura usa LLM com RAG para consultar a base de conhecimento e agentes autônomos para
+                                fazer agendamentos reais no Google Calendar. Estou prototipando a integração do Whisper com o
+                                backend Python para transcrição em tempo real.
+                            </p>
+                            <p class="projeto-impacto"><strong>Impacto:</strong> 99% de acessibilidade digital.</p>
+                            <ul class="tags" aria-label="Tecnologias">
+                                <li class="tag">OpenAI API</li>
+                                <li class="tag">Whisper</li>
+                                <li class="tag">Google Calendar API</li>
+                                <li class="tag">Python</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="card card-projeto">
+                        <div class="projeto-midia">
+                            <img src="imagens/Ipe Challenge.jpg" alt="Equipes reunidas durante o Ipê Challenge 2025" loading="lazy">
+                        </div>
+                        <div class="projeto-corpo">
+                            <span class="status status-concluido">Concluído</span>
+                            <h3>Mentoria técnica e validação de MVP no Ipê Challenge 2025</h3>
+                            <p class="projeto-categoria">Hackathon e tecnologia</p>
+                            <p>
+                                Atuei como mentor técnico e avaliador na fase de pré-pitch, filtrando a viabilidade de
+                                projetos de mais de 15 equipes.
                             </p>
                             <p>
-                                Prototipando a integração do Whisper com o backend Python para transcrição em tempo real.
+                                <strong>Viabilidade:</strong> análise das stacks escolhidas, para o MVP caber em 24h.
+                                <strong>Troubleshooting:</strong> apoio direto para destravar bugs de integração e de
+                                banco de dados. <strong>Banca técnica:</strong> validação da lógica e da funcionalidade
+                                dos protótipos antes da final.
                             </p>
-                            <div class="projeto-metadata">
-                                <div class="metadata-item">
-                                    <span class="metadata-label">Status</span>
-                                    <span class="metadata-value em-andamento">Em andamento</span>
-                                </div>
-                                <div class="metadata-item">
-                                    <span class="metadata-label">Impacto</span>
-                                    <span class="metadata-value">99% de acessibilidade digital</span>
-                                </div>
-                            </div>
-                            <div class="projeto-tags">
-                                <span class="tag">OpenAI API</span>
-                                <span class="tag">Whisper</span>
-                                <span class="tag">Google Calendar API</span>
-                                <span class="tag">Python</span>
-                            </div>
+                            <p class="projeto-impacto"><strong>Impacto:</strong> mais de 100 jovens nesta edição.</p>
+                            <ul class="tags" aria-label="Competências">
+                                <li class="tag">System design</li>
+                                <li class="tag">Viabilidade técnica</li>
+                                <li class="tag">Mentoria</li>
+                            </ul>
                         </div>
-                        <div class="projeto-imagem">
-                            <img src="imagens/Voice interface-bro.svg" alt="Ipê Challenge 2025">
-                        </div>
-                    </div>
+                    </article>
 
-                <div class="projeto-featured projeto-reverse">
-                        <div class="projeto-conteudo">
-                            <div class="projeto-header">
-                                <h3>Mentoria Técnica & Validação de MVP (Hackathon IpêChallenge 2025)</h3>
-                                <div class="projeto-categoria">Hackathon & Tecnologia</div>
-                            </div>
-                            <p class="projeto-descricao">
-                                Durante o Ipê Challenge, atuei como Mentor Técnico e Avaliador na fase de Pre-Pitch, filtrando 
-                                a viabilidade de projetos de 15+ equipes.
-                            </p>
-                            <p class="projeto-descricao">
-                                <strong>🏗️ Análise de Viabilidade:</strong> Avaliação crítica das stacks tecnológicas escolhidas pelas equipes para 
-                                garantir que o MVP fosse entregável em 24h.
-                            </p>
-                            <p class="projeto-descricao">
-                                <strong>🔧 Troubleshooting Ativo: </strong> Apoio prático às equipes para destravar bugs de integração e arquitetura de 
-                                banco de dados durante a competição.
-                            </p>
-                            <p class="projeto-descricao">
-                                <strong>🔍 Banca Técnica:</strong> Validação da estrutura lógica e funcionalidade dos protótipos apresentados antes da fase final.
-                            </p>    
-                            <p class="projeto-impacto">
-                                Minha responsabilidade não foi avaliar o "business", mas sim a <strong>Viabilidade Técnica das soluções propostas.</strong> 
-                            </p>
-                            <div class="projeto-metadata">
-                                <div class="metadata-item">
-                                    <span class="metadata-label">Status</span>
-                                    <span class="metadata-value concluido">Concluído</span>
-                                </div>
-                                <div class="metadata-item">
-                                    <span class="metadata-label">Impacto</span>
-                                    <span class="metadata-value">+ 100 jovens impactados nessa edição</span>
-                                </div>
-                            </div>
-                            <div class="projeto-tags">
-                                <span class="tag">System Design</span>
-                                <span class="tag">Technical Feasibility</span>
-                                <span class="tag">Mentorship</span>
-                            </div>
+                    <article class="card card-projeto">
+                        <div class="projeto-midia projeto-midia-ilustra">
+                            <img src="imagens/Cohort analysis-cuate.svg" alt="Ilustração de análise de dados em painéis" loading="lazy">
                         </div>
-                        <div class="projeto-imagem">
-                            <img src="imagens/Ipe Challenge.jpg" alt="Ipê Challenge 2025">
+                        <div class="projeto-corpo">
+                            <span class="status status-andamento">Em andamento</span>
+                            <h3>Pipeline automatizado de anonimização de dados</h3>
+                            <p class="projeto-categoria">Segurança jurídica automatizada</p>
+                            <p>
+                                Uma ferramenta agnóstica para limpar planilhas de RH com dados sensíveis (PII) antes de
+                                compartilhar com outras pessoas.
+                            </p>
+                            <p>
+                                <strong>Hoje:</strong> script Python funcional que mascara CPF e e-mail.
+                                <strong>Próximos passos:</strong> interface simples em Streamlit para quem não é técnico e
+                                suporte a PDF.
+                            </p>
+                            <p class="projeto-impacto"><strong>Impacto:</strong> elimina 100% dos dados pessoais.</p>
+                            <ul class="tags" aria-label="Tecnologias">
+                                <li class="tag">Privacidade de dados</li>
+                                <li class="tag">LGPD</li>
+                                <li class="tag">Pandas</li>
+                                <li class="tag">Automação</li>
+                            </ul>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="projeto-featured projeto-reverse">
-                        <div class="projeto-conteudo">
-                            <div class="projeto-header">
-                                <h3>Pipeline automatizado de anonimização de dados</h3>
-                                <div class="projeto-categoria">Segurança jurídica automatizada</div>
-                            </div>
-                            <p class="projeto-descricao">
-                                Criar uma ferramenta agnóstica para sanitizar planilhas de RH contendo dados sensíveis (PII) antes de compartilhamento 
-                                externo. <strong>Estado Atual:</strong> Script Python funcional para mascaramento de CPF e E-mail. <strong>Próximos Passos:</strong> 
-                                Criar interface gráfica simples (Streamlit) para usuários não-técnicos e adicionar suporte a arquivos PDF.
+                    <article class="card card-projeto card-projeto-largo">
+                        <div class="projeto-midia">
+                            <img src="imagens/Police Office.jpg" alt="Treinamento em posto de perícia da Polícia Civil" loading="lazy">
+                        </div>
+                        <div class="projeto-corpo">
+                            <span class="status status-andamento">Em evolução</span>
+                            <h3>Sistema de gestão operacional e inteligência pericial</h3>
+                            <p class="projeto-categoria">Banco de dados relacional e automação de fluxos de trabalho</p>
+                            <p>
+                                <strong>Desafio:</strong> um posto de perícia com dados espalhados e alto risco de erro
+                                humano na gestão de laudos e escalas.
                             </p>
-                            <div class="projeto-metadata">
-                                <div class="metadata-item">
-                                    <span class="metadata-label">Status</span>
-                                    <span class="metadata-value em-andamento">Em andamento</span>
-                                </div>
-                                <div class="metadata-item">
-                                    <span class="metadata-label">Impacto</span>
-                                    <span class="metadata-value">Elimina 100% de dados pessoais.</span>
-                                </div>
-                            </div>
-                            <div class="projeto-tags">
-                                <span class="tag">Data Privacy</span>
-                                <span class="tag">LGPD</span>
-                                <span class="tag">Pandas</span>
-                                <span class="tag">Automation</span>
-                            </div>
-                        </div>
-                        <div class="projeto-imagem">
-                            <img src="imagens/Cohort analysis-cuate.svg" alt="Ipê Challenge 2025">
-                        </div>
-                    </div>
+                            <p>
+                                <strong>Solução:</strong> uma arquitetura relacional que funciona como um sistema
+                                operacional completo, estruturando dados fora de padrão em um fluxo lógico. Os bancos
+                                ligam ocorrências, laudos e legislação automaticamente, e a lógica condicional sugere
+                                roteiros investigativos conforme o tipo de crime.
+                            </p>
+                            <p>
+                                <strong>Roadmap (backend):</strong> script Python para backup automático dos dados, via
+                                API, em um banco SQL externo.
+                            </p>
 
-                    <div class="projeto-destaque">
-                        <div class="projeto-destaque-background">
-                            <img src="imagens/Police Office.jpg" alt="Treinamento PCMG">
-                            <div class="projeto-destaque-overlay"></div>
-                        </div>
-                        <div class="projeto-destaque-conteudo">
-                            <div class="projeto-header">
-                                <h3>Sistema de Gestão Operacional e Inteligência Pericial</h3>
-                                <div class="projeto-categoria">Arquitetura de Banco de Dados Relacional & Automação de Fluxos de Trabalho.</div>
-                            </div>
-                            <div class="projeto-destaque-grid">
-                                <div class="projeto-descricao-destaque">
-                                    <p>
-                                        <strong>Desafio:</strong> Centralização de operações de um Posto de Perícia que sofria com dados dispersos e alto risco de erro humano na gestão de laudos e escalas.
-                                    </p>
-                                    <p>
-                                        <strong>A Solução:</strong> Desenvolvimento de uma Arquitetura Relacional que funciona como um Sistema Operacional completo. O foco foi estruturar dados não padronizados em um fluxo lógico.
-                                    </p>
-                                    <p>
-                                        <strong>Modelagem de Dados:</strong> Criação de bancos relacionais para vincular automaticamente ocorrências, laudos e legislação.
-                                    </p>
-                                    <p><strong>Lógica Condicional:</strong> Implementação de algoritmos para sugerir roteiros investigativos baseados na tipologia do crime.</p>
-                                    <p>
-                                        <strong>Roadmap (Backend):</strong> Desenvolvimento atual de script Python para backup automático dos dados via API para banco SQL externo.
-                                    </p>
-                                    
+                            <dl class="projeto-numeros">
+                                <div>
+                                    <dd>100%</dd>
+                                    <dt>Cloud e mobile friendly</dt>
                                 </div>
-                                <div class="projeto-stats">
-                                    <div class="stat-item">
-                                        <span class="stat-number">100%</span>
-                                        <span class="stat-label">Cloud & Mobile Friendly</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-number">Unificada</span>
-                                        <span class="stat-label">Gestão da Informação</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-number">-30 min</span>
-                                        <span class="stat-label">Por laudo gerado</span>
-                                    </div>
+                                <div>
+                                    <dd>Unificada</dd>
+                                    <dt>Gestão da informação</dt>
                                 </div>
-                            </div>
-                            <div class="projeto-tags">
-                                <span class="tag">Notion</span>
-                                <span class="tag">Python</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">Inovação</span>
-                            </div>
+                                <div>
+                                    <dd>−30 min</dd>
+                                    <dt>Por laudo gerado</dt>
+                                </div>
+                            </dl>
+
+                            <ul class="tags" aria-label="Tecnologias">
+                                <li class="tag">Notion</li>
+                                <li class="tag">Python</li>
+                                <li class="tag">MySQL</li>
+                                <li class="tag">Inovação</li>
+                            </ul>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="experiencia">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>Experiência Profissional</h2>
-                    <p>Minha jornada de crescimento e impacto</p>
-                </div>
-                <div class="experiencia-container">
-                    <div class="experiencia-item">
-                        <div class="experiencia-header">
-                            <div class="experiencia-logo">
-                                <img src="imagens/prefeitura.png" alt="Prefeitura de Lavras">
-                            </div>
-                            <div class="experiencia-info">
-                                <h3>Desenvolvedor de Automações e Sistemas</h3>
-                                <span class="experiencia-periodo">Jul/25 - Atual</span>
-                            </div>
-                        </div>
-                        <p>
-                            Atuação técnica focada no desenvolvimento de software e scripts 
-                            para modernização e desburocratização de processos públicos.
-                        </p>
-                        <p>
-                            <strong>Automação:</strong> Desenvolvimento de rotinas em Python para integração de sistemas e ETL de dados.
-                        </p>
-                        <p>
-                            <strong>Sistemas:</strong> Definição de fluxos e arquitetura de soluções digitais para o município.
-                        </p>
-                    </div>
+        <!-- EXPERIÊNCIA -->
+        <section class="secao secao-nevoa" id="experiencia" aria-labelledby="experiencia-titulo">
+            <div class="container">
+                <header class="secao-cabecalho">
+                    <h2 id="experiencia-titulo">Experiência profissional</h2>
+                    <p>Minha jornada de crescimento e impacto.</p>
+                </header>
 
-                    <div class="experiencia-item">
-                        <div class="experiencia-header">
-                            <div class="experiencia-logo">
-                                <img src="imagens/GEPID.jpg" alt="Grupo de Estudo em Perícia e Investigação Digital">
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <article class="card experiencia">
+                            <div class="experiencia-topo">
+                                <img class="experiencia-logo" src="imagens/prefeitura.png" alt="" loading="lazy" width="56" height="56">
+                                <div>
+                                    <h3>Desenvolvedor de automações e sistemas</h3>
+                                    <p class="experiencia-meta">Prefeitura de Lavras <span class="tag">Jul/25 até hoje</span></p>
+                                </div>
                             </div>
-                            <div class="experiencia-info">
-                                <h3>Tech Lead & Desenvolvedor Backend</h3>
-                                <span class="experiencia-periodo">Mar/25 - Atual</span>
-                            </div>
-                        </div>
-                        <p>
-                            Liderança técnica no desenvolvimento de soluções voltadas para computação forense e inteligência artificial.
-                        </p>
-                        <p>
-                            <strong>Engenharia:</strong> do "Sistema de Gestão Operacional" utilizando integrações via API.
-                        </p>
-                        <p>
-                            <strong>Liderança:</strong> Code review e orientação técnica para pesquisadores do grupo.
-                        </p>
-                    </div>
+                            <p>Desenvolvimento de software e scripts para modernizar e desburocratizar processos públicos.</p>
+                            <p><strong>Automação:</strong> rotinas em Python para integração de sistemas e ETL de dados.</p>
+                            <p><strong>Sistemas:</strong> definição de fluxos e da arquitetura de soluções digitais para o município.</p>
+                        </article>
+                    </li>
 
-                    <div class="experiencia-item">
-                        <div class="experiencia-header">
-                            <div class="experiencia-logo">
-                                <img src="imagens/verde campo.png" alt="Prefeitura de Lavras">
+                    <li class="timeline-item">
+                        <article class="card experiencia">
+                            <div class="experiencia-topo">
+                                <img class="experiencia-logo" src="imagens/GEPID.jpg" alt="" loading="lazy" width="56" height="56">
+                                <div>
+                                    <h3>Tech lead e desenvolvedor backend</h3>
+                                    <p class="experiencia-meta">GEPID <span class="tag">Mar/25 até hoje</span></p>
+                                </div>
                             </div>
-                            <div class="experiencia-info">
-                                <h3>Assistente de Suporte Técnico (TI)</h3>
-                                <span class="experiencia-periodo">Abr/25 - Jun/25</span>
+                            <p>Liderança técnica em soluções de computação forense e inteligência artificial.</p>
+                            <p><strong>Engenharia:</strong> construção do Sistema de Gestão Operacional, com integrações via API.</p>
+                            <p><strong>Liderança:</strong> code review e orientação técnica para os pesquisadores do grupo.</p>
+                        </article>
+                    </li>
+
+                    <li class="timeline-item">
+                        <article class="card experiencia">
+                            <div class="experiencia-topo">
+                                <img class="experiencia-logo" src="imagens/verde campo.png" alt="" loading="lazy" width="56" height="56">
+                                <div>
+                                    <h3>Assistente de suporte técnico (TI)</h3>
+                                    <p class="experiencia-meta">Verde Campo <span class="tag">Abr/25 a Jun/25</span></p>
+                                </div>
                             </div>
-                        </div>
-                        <p>
-                            Suporte avançado (N2) e sustentação de sistemas corporativos críticos.
-                        </p>
-                        <p>
-                            <strong>Banco de Dados:</strong> Execução de queries SQL para análise de dados e incidentes.
-                        </p>
-                        <p>
-                            <strong>ERP</strong> Sustentação dos sistemas TOTVS e SAP, garantindo a continuidade da operação fabril
-                        </p>
-                    </div>
-                    
-                    <div class="experiencia-item">
-                        <div class="experiencia-header">
-                            <div class="experiencia-logo">
-                                <img src="imagens/Pcmg.png" alt="Policia Civil">
+                            <p>Suporte avançado (N2) e sustentação de sistemas corporativos críticos.</p>
+                            <p><strong>Banco de dados:</strong> queries SQL para análise de dados e incidentes.</p>
+                            <p><strong>ERP:</strong> sustentação dos sistemas TOTVS e SAP, garantindo a continuidade da operação fabril.</p>
+                        </article>
+                    </li>
+
+                    <li class="timeline-item">
+                        <article class="card experiencia">
+                            <div class="experiencia-topo">
+                                <img class="experiencia-logo" src="imagens/Pcmg.png" alt="" loading="lazy" width="56" height="56">
+                                <div>
+                                    <h3>Estagiário de desenvolvimento e suporte</h3>
+                                    <p class="experiencia-meta">Polícia Civil de Minas Gerais <span class="tag">Set/24 a Abr/25</span></p>
+                                </div>
                             </div>
-                            <div class="experiencia-info">
-                                <h3>Estagiário de Desenvolvimento & Suporte</h3>
-                                <span class="experiencia-periodo">Set/24 - Abr/25</span>
-                            </div>
-                        </div>
-                        <p>
-                            Apoio na atuação em análise forense digital utilizando scripts de automação.
-                        </p>
-                        <p>
-                            <strong>Forensic Tech:</strong> Criação de scripts para triagem de evidências digitais.
-                        </p>
-                        <p>
-                            <strong>Infraestrutura:</strong> Documentação técnica e manutenção de ativos de TI.
-                        </p>
-                    </div>
-                </div>
+                            <p>Apoio à análise forense digital com scripts de automação.</p>
+                            <p><strong>Forensic tech:</strong> scripts para triagem de evidências digitais.</p>
+                            <p><strong>Infraestrutura:</strong> documentação técnica e manutenção de ativos de TI.</p>
+                        </article>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <section id="contato">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2>Vamos Conversar?</h2>
-                    <p>Tem um processo manual chato? Vamos automatizar.</p>
-                </div>
-                <div class="contato-container">
-                    <div class="contato-texto">
-                        <h3>Entre em Contato</h3>
-                        <p>Quer transformar seu projeto, ou apenas conversar sobre inovação, tecnologia e novas oportunidades? Vamos nos conectar!</p>
-                    </div>
-                    <div class="contato-links">
-                        <a class="botao-contato" href="mailto:gustavohenriquesilva293@gmail.com">
-                            <div class="contato-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="contato-info">
-                                <span class="contato-tipo">E-mail</span>
-                                <span class="contato-detalhe">gustavohenriquesilva293@gmail.com</span>
-                            </div>
-                        </a>
-                        <a class="botao-contato" href="https://www.linkedin.com/in/devgustavosilva/" target="_blank">
-                            <div class="contato-icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
-                            <div class="contato-info">
-                                <span class="contato-tipo">LinkedIn</span>
-                                <span class="contato-detalhe">/devgustavosilva</span>
-                            </div>
-                        </a>
-                        <a class="botao-contato" href="https://github.com/hsgustavoo" target="_blank">
-                            <div class="contato-icon">
-                                <i class="fa-brands fa-github"></i>
-                            </div>
-                            <div class="contato-info">
-                                <span class="contato-tipo">Github</span>
-                                <span class="contato-detalhe">@hsgustavoo</span>
-                            </div>
-                        </a>
+        <!-- CONTATO -->
+        <section class="secao secao-noite on-dark" id="contato" aria-labelledby="contato-titulo">
+            <div class="container contato-grid">
+                <div class="contato-texto">
+                    <h2 id="contato-titulo">Bora conversar?</h2>
+                    <p>
+                        Tem um processo manual travando o seu time? Quer trocar ideia sobre inovação, tecnologia ou
+                        uma nova oportunidade? Me chama. O primeiro passo pode ser pequeno.
+                    </p>
+                    <div class="hero-acoes">
+                        <a class="btn btn-primario" href="mailto:gustavohenriquesilva293@gmail.com">Enviar e-mail</a>
+                        <a class="btn btn-secundario" href="documentos/Gustavo%20Henrique%20Silva%20-%20Curr%C3%ADculo.pdf" download>Baixar currículo (PDF)</a>
                     </div>
                 </div>
+
+                <ul class="contato-links">
+                    <li>
+                        <a class="contato-link" href="mailto:gustavohenriquesilva293@gmail.com">
+                            <svg class="contato-icone" width="24" height="24" aria-hidden="true"><use href="#i-mail"/></svg>
+                            <span><strong>E-mail</strong><small>gustavohenriquesilva293@gmail.com</small></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contato-link" href="https://www.linkedin.com/in/devgustavosilva/" target="_blank" rel="noopener">
+                            <svg class="contato-icone" width="24" height="24" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                            <span><strong>LinkedIn</strong><small>/devgustavosilva</small></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contato-link" href="https://github.com/hsgustavoo" target="_blank" rel="noopener">
+                            <svg class="contato-icone" width="24" height="24" aria-hidden="true"><use href="#i-github"/></svg>
+                            <span><strong>GitHub</strong><small>@hsgustavoo</small></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Gustavo Silva</h3>
-                    <p>Desenvolvedor Backend & Automação</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#sobre">Sobre</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#experiencia">Experiência</a>
-                    <a href="#contato">Contato</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 Gustavo Henrique Silva. Todos os direitos reservados.</p>
-                <p>Desenvolvido com inovação e propósito.</p>
-            </div>
+    <footer class="site-footer on-dark">
+        <div class="container footer-inner">
+            <a class="logo" href="#topo" aria-label="hsgustavoo, voltar ao topo">
+                <svg class="logo-simbolo" width="40" height="40" aria-hidden="true"><use href="#hs-simbolo"/></svg>
+                <span class="logo-texto">hsgustavoo</span>
+            </a>
+            <nav aria-label="Rodapé">
+                <ul class="footer-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <p class="footer-legenda">© 2026 Gustavo Henrique Silva. hsgustavoo.com.br</p>
         </div>
     </footer>
-
-    <script src="https://kit.fontawesome.com/2c6e2f1b77.js" crossorigin="anonymous"></script>
 </body>
 </html>

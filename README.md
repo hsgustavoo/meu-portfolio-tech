@@ -13,10 +13,19 @@ O site foi construído focado em performance e responsividade, utilizando:
 * **CSS3:** Estilização moderna e layout responsivo (Mobile First).
 * **JavaScript:** Interatividade dos botões e animações.
 
+## 🎨 Design System
+O visual segue o **Guia de Identidade Visual e Design System hsgustavoo v1.0**:
+* **Cores:** Azul Noite `#0B1B3A`, Azul Elétrico `#2F5BFF`, Âmbar `#FFB020`, Névoa `#F3F5FA` e Grafite `#475069` (tokens em `:root`, no `style.css`).
+* **Tipografia:** Sora Bold nos títulos e Inter no texto (Google Fonts), com Arial como alternativa.
+* **Componentes:** botões pill de 44 px, cards com raio de 16 px, tags pill, base de espaçamento de 8 px.
+* **Grid:** 12 colunas, largura máxima de 1120 px, gutter de 24 px, breakpoints em 640, 1024 e 1280 px.
+
 ## 📂 Estrutura
 - `/index.html`: Página principal.
-- `/style.css`: Folhas de estilo.
-- `/script.js`: Lógica de frontend.
+- `/style.css`: Tokens do design system e estilos.
+- `/script.js`: Menu mobile, link ativo, barra de progresso.
+- `/assets`: Símbolo e favicon da marca.
+- `/imagens` e `/documentos`: Fotos, ilustrações e currículos.
 
 ## 📬 Contato
 Gostou do portfólio? Entre em contato comigo:
